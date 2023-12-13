@@ -260,7 +260,7 @@ const Home = () => {
        <div className='w-11/12 max-w-maxContent flex flex-col justify-between items-center gap-5 mx-auto'>
 
        <div className='h-[100px] lg:h-[200px]'></div>
-       <div className='text-white flex flex-row  gap-7'>
+       <div className='text-white flex  gap-7'>
 
        <CTAButton active={true} linkto={"/catalog/criminal"}>
            
