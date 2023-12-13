@@ -52,7 +52,7 @@ const Home = () => {
 
 
 
-        <div className=' text-silk-200 ml-10 flex flex-col justify-center items-center w-full'>
+        <div className=' text-silk-200 ml-10 flex flex-col justify-center lg:justify-center lg:items-center w-full'>
         <p className='text-xl'>We are here to help !</p> 
         <p className='text-3xl text-silk-200 font-custom font-bold'>
             Welcome to LawVistaHub
