@@ -4,6 +4,7 @@ import knowYourProgress from "../../../assets/Images/zo.jpg"
 import compare_with_others from "../../../assets/Images/Compare_with_others.png"
 import plan_your_lesson from "../../../assets/Images/5p1.webp"
 import CTAButton from "../HomePage/Button"
+import imgt from "../../../assets/Images/aboutus2.webp"
 
 const LearningSection = () => {
   return (
@@ -11,24 +12,25 @@ const LearningSection = () => {
       <div className='flex flex-col gap-5 items-center'>
 
         <div className='text-4xl text-center font-semibold'>
-            Your swiss knife for
-            <HighlightText text={" learning any language"} />
+            
+            <HighlightText text={"Who We Are"} />
         </div>
 
-        <div className='text-center text-richblack-600 mx-auto mt-3 text-base font-semibold w-[70%]'>
-            Using spin making learning multiple languages easy. With 20+ languages realistic voice-over,
-            progress tracking, custom schedule and more.
+        <div className='text-center text-richblack-900 mx-auto text-base font-semibold w-[70%] font-custom'>
+            Pursuit of justice for our client
         </div>
 
-        <div className='flex flex-col-reverse gap-2 lg:flex-row items-center justify-center mt-5'>
-            <img src={knowYourProgress} className='object-contain -mr-28 rotate-6 shadow-xl'
-            width={400} 
-            height={400}
-            />
+        <div className='flex flex-col gap-28 lg:gap-52 lg:flex-row items-center justify-center mt-5'>
+           <div className='w-[70%] lg:w-[40%]'>
+              <p className='items-center justify-center'>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas asperiores qui at consequuntur molestiae dolore voluptates. Possimus, odio quidem non magni, facere nemo cupiditate, a modi sit deserunt voluptatem?
+              </p>
+           </div>
+           <div className='w-[70%]  lg:w-[40%] items-center justify-center'>
+            <img src={imgt} className='shadow-xl'>
+            </img>
 
-            <img src={compare_with_others} className='object-contain' />
-
-            <img src={plan_your_lesson} className='object-contain -ml-36 -rotate-6 shadow-xl' />
+           </div>
         </div>
 
         <div className='w-fit'>

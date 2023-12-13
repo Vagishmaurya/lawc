@@ -101,7 +101,9 @@ const Home = () => {
         <div className='w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-8'>
 
 {/* <InstructorSection /> */}
-
+<div className='mt-8 text-velvet-100 font-custom text-5xl'>
+       <h2>Testimonials</h2>
+</div>
 {/* <h2 className='font-semibold text-4xl text-center mt-10'>Review from Other Learners</h2> */}
 <ReviewSlider />
 {/* <Slider {...settings}>
@@ -126,8 +128,8 @@ const Home = () => {
 
 
         <div className='relative w-full  mx-auto font-serif flex flex-col items-center  max-w-maxContent text-richblack-800 justify-between'>
-        <div className='flex  justify-center w-[80%] font-bold text-lg text-richblack-400 mt-28'>
-            <div className='flex flex-col gap-32'>
+        <div className='flex  justify-center w-[80%] font-bold text-lg text-richblack-400 mt-18'>
+            {/* <div className='flex flex-col gap-32'>
                 <div>
                     <img src={connect}
                     width={100}
@@ -139,10 +141,10 @@ const Home = () => {
                     width={100}
                     ></img>
                 </div>
-            </div>
+            </div> */}
            <img  src={cartoon}></img>
            {/* <img src={spiral}></img> */}
-               <div className=' flex flex-col gap-32'>
+               {/* <div className=' flex flex-col gap-32'>
                 <div>
                     <img src={resolve}
                     width={100}
@@ -154,7 +156,7 @@ const Home = () => {
                     >
                     </img>
                 </div>
-             </div>
+             </div> */}
            </div>
            
           
@@ -253,14 +255,14 @@ const Home = () => {
     {/*Section 2*/}
     <div className='bg-gradient-to-r from-white to-white text-richblack-700'>
        
-       <div className='h-[333px] homepage_bg'>
+       <div className='h-[333px] homebg'>
 
        <div className='w-11/12 max-w-maxContent flex flex-col justify-between items-center gap-5 mx-auto'>
 
-       <div className='h-[200px]'></div>
-       <div className='text-white flex gap-7'>
+       <div className='h-[100px] lg:h-[200px]'></div>
+       <div className='text-white flex  gap-7'>
 
-       <CTAButton active={true} linkto={"/signup"}>
+       <CTAButton active={true} linkto={"/catalog/criminal"}>
            
            <div className='flex gap-2 items-center'>
             Explore More
@@ -269,7 +271,7 @@ const Home = () => {
 
        </CTAButton>
 
-       <CTAButton active={false} linkto={"/signup"}>
+       <CTAButton active={false} linkto={"/contact"}>
            
            <div className='flex items-center'>
             Book Appointment
