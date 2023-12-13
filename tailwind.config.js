@@ -95,6 +95,19 @@ module.exports = {
         800: "#4F0A25",
         900: "#340019",
       },
+      silk :{
+        100 : "#EEE5D9",
+        200 : "#FDFFFF",
+      },
+      champ :{
+        100: "#D2B68A"
+   },
+   velvet :{
+          100 : "#222D52"
+   },
+   marble :{
+     100 : "#E8E4E0"
+   },
       yellow: {
         5: "#FFF970",
         25: "#FFE83D",
