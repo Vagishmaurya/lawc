@@ -1,5 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap'); */
 html,
 body {
   overflow-x: hidden;
@@ -10,22 +12,8 @@ body {
 * {
   scrollbar-width: auto;
   scrollbar-color: #afb2bf;
-  margin: 0%;
-  padding: 0%;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #464444;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 3px;
@@ -63,14 +51,6 @@ details > summary::-webkit-details-marker {
   border: 9px solid #f1f2ff;
   animation: spinner-bulqg1 0.8s infinite linear alternate,
     spinner-oaa3wk 1.6s infinite linear;
-}
-.loginbg{
-  background-image: url("../src/assets/Images/Log\ in\ \ \(4\).png");
-  
-}
-
-.homebg{
-   background-image: url("../src/assets/Images/2\ \(1\).png");
 }
 
 .codeblock1 {
@@ -232,7 +212,7 @@ details > summary::-webkit-details-marker {
 
 /* Buttons */
 .yellowButton {
-  @apply cursor-pointer rounded-md bg-champ-100 px-[20px] py-[8px] font-semibold text-richblack-900;
+  @apply cursor-pointer rounded-md bg-yellow-50 px-[20px] py-[8px] font-semibold text-richblack-900;
 }
 
 /* Swiper CSS Starts */

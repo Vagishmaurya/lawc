@@ -3,11 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      inter: ["Poppins", "sans-serif"],
-     
-      mono: ["Ubuntu'", "sans-serif"],
-
-      // custom : ["Kalnia"],
+      inter: ["Inter", "sans-serif"],
+      "edu-sa": ["Edu SA Beginner", "cursive"],
+      mono: ["Roboto Mono", "monospace"],
     },
     colors: {
       white: "#fff",
@@ -46,8 +44,8 @@ module.exports = {
         25: "#B4DAEC",
         50: "#7EC0D9",
         100: "#47A5C5",
-        200: "#60F3F2",
-        300: "#e0f2fe",
+        200: "#118AB2",
+        300: "#0F7A9D",
         400: "#0C6A87",
         500: "#0A5A72",
         600: "#074B5D",
@@ -97,9 +95,6 @@ module.exports = {
         800: "#4F0A25",
         900: "#340019",
       },
-    
-         
-      
       yellow: {
         5: "#FFF970",
         25: "#FFE83D",
@@ -114,20 +109,6 @@ module.exports = {
         800: "#3D2A01",
         900: "#251400",
       },
-      silk :{
-        100 : "#EEE5D9",
-        200 : "#FDFFFF",
-      },
-      champ :{
-           100: "#D2B68A"
-      },
-      velvet :{
-             100 : "#222D52"
-      },
-      marble :{
-        100 : "#E8E4E0"
-      },
-
       "pure-greys": {
         5: "#F9F9F9",
         25: "#E2E2E2",
