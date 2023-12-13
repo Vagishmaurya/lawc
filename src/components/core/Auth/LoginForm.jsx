@@ -77,6 +77,7 @@ function LoginForm() {
             <AiOutlineEye fontSize={24} fill="#AFB2BF" />
           )}
         </span>
+      
         <Link to="/forgot-password">
           <p className="mt-1 ml-auto max-w-max text-xs text-silk-100">
             Forgot Password
@@ -87,8 +88,17 @@ function LoginForm() {
         type="submit"
         className="mt-6 rounded-[8px] bg-champ-100 py-[8px] px-[12px] font-medium text-richblack-900"
       >
-        Sign In
+        Log In
       </button>
+
+      <Link to="/signup">
+      <button
+        
+        className="mt-2 w-full rounded-[8px] bg-champ-100 py-[8px] px-[12px] font-medium text-richblack-900"
+      >
+        New User ?
+      </button>
+      </Link>
     </form>
   )
 }
