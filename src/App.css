@@ -102,6 +102,12 @@ details > summary::-webkit-details-marker {
   background: url("../src/assets/Images/bghome.svg");
   /* background-size: contain; */
 }
+.loginbg{
+  background: url("../src/assets/Images/homeda.png");
+}
+.homebg{
+  background: url("../src/assets/Images/homed.png");
+}
 
 @keyframes spinner-bulqg1 {
   0% {
