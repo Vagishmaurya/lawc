@@ -7,7 +7,7 @@ module.exports = {
      
       mono: ["Ubuntu'", "sans-serif"],
 
-      custom : ["Kalnia"],
+      // custom : ["Kalnia"],
     },
     colors: {
       white: "#fff",
