@@ -25,8 +25,9 @@ import MyCourses from "./components/core/Dashboard/MyCourses";
 import EditCourse from "./components/core/Dashboard/EditCourse";
 import Catalog from "./pages/Catalog";
 import CourseDetails from "./pages/CourseDetails";
-// import ViewCourse from "./pages/ViewCourse";
-// import VideoDetails from "./components/core/ViewCourse/VideoDetails";
+import ViewCourse from "./pages/ViewCourse";
+import VideoDetails from "./components/core/ViewCourse/VideoDetails";
+import PrivateRoom from "./pages/PrivateRoom";
 
 //import {TweenMax, Power3 } from 'gsap'; 
 
@@ -100,6 +101,24 @@ function App() {
           }
         />
     <Route path="/contact" element={<Contact />} />
+   
+    
+  
+      
+     <Route 
+     path="/private"
+     element={
+      <PrivateRoute>
+          <PrivateRoom/>
+          </PrivateRoute>
+        }
+          
+          />
+        
+      
+      
+           
+
 
     <Route 
       element={
@@ -107,10 +126,22 @@ function App() {
           <Dashboard />
         </PrivateRoute>
       }
+      
+
+
+
     >
+     
+
+
+
+
+
       <Route path="dashboard/my-profile" element={<MyProfile />} />
       
       <Route path="dashboard/Settings" element={<Settings />} />
+
+      
      
       {
         user?.accountType === ACCOUNT_TYPE.STUDENT && (
@@ -139,7 +170,7 @@ function App() {
 
 
 
-    {/* <Route element={
+    <Route element={
         <PrivateRoute>
           <ViewCourse />
         </PrivateRoute>
@@ -158,7 +189,7 @@ function App() {
 
       </Route>
 
-     */}
+    
 
     <Route path="*" element={<Error />} />
 

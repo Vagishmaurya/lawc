@@ -143,7 +143,7 @@ export default function SubSectionModal({
           {/* Lecture Video Upload */}
           <Upload
             name="lectureVideo"
-            label="Lecture Video"
+            label="Course Video"
             register={register}
             setValue={setValue}
             errors={errors}
@@ -154,37 +154,37 @@ export default function SubSectionModal({
           {/* Lecture Title */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureTitle">
-              Lecture Title {!view && <sup className="text-pink-200">*</sup>}
+              Course Title {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <input
               disabled={view || loading}
               id="lectureTitle"
-              placeholder="Enter Lecture Title"
+              placeholder="Enter Course Title"
               {...register("lectureTitle", { required: true })}
               className="form-style w-full"
             />
             {errors.lectureTitle && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture title is required
+                Course title is required
               </span>
             )}
           </div>
           {/* Lecture Description */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureDesc">
-              Lecture Description{" "}
+              Course Description{" "}
               {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <textarea
               disabled={view || loading}
               id="lectureDesc"
-              placeholder="Enter Lecture Description"
+              placeholder="Enter Course Description"
               {...register("lectureDesc", { required: true })}
               className="form-style resize-x-none min-h-[130px] w-full"
             />
             {errors.lectureDesc && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture Description is required
+                Course Description is required
               </span>
             )}
           </div>

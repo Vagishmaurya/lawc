@@ -108,6 +108,9 @@ details > summary::-webkit-details-marker {
 .homebg{
   background: url("../src/assets/Images/homed.png");
 }
+.courtbg{
+  background: url("../src/assets/Images/court.jpg");
+}
 
 @keyframes spinner-bulqg1 {
   0% {

@@ -20,6 +20,7 @@ import bail from '../assets/Images/470.png'
 import lawf from '../assets/Images/lawf.webp'
 import procedure from '../assets/Images/procedure.jpg'
 import Slider from 'react-slick';
+import PrivateRoom from './PrivateRoom';
 
 
 

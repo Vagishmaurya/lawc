@@ -4,6 +4,10 @@ export const NavbarLinks = [
     path: "/",
   },
   {
+     title : "Private Room",
+     path : "/private"
+  },
+  {
     title: "Catalog",
     // path: '/catalog',
   },

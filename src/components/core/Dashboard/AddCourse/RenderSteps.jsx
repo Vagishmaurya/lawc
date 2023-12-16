@@ -12,7 +12,7 @@ export default function RenderSteps() {
   const steps = [
     {
       id: 1,
-      title: "Course Information",
+      title: "Personal Information",
     },
     {
       id: 2,
@@ -71,7 +71,7 @@ export default function RenderSteps() {
               
               <p
                 className={`text-sm ${
-                  step >= item.id ? "text-richblack-5" : "text-richblack-500"
+                  step >= item.id ? "text-velvet-100" : "text-richblack-500"
                 }`}
               >
                 {item.title}
