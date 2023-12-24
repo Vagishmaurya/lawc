@@ -28,6 +28,12 @@ import CourseDetails from "./pages/CourseDetails";
 import ViewCourse from "./pages/ViewCourse";
 import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import PrivateRoom from "./pages/PrivateRoom";
+import LobbyScreen from "../src/video/screens/Lobby"
+import RoomPage from "../src/video/screens/Room"
+import Schedule from "./components/core/Dashboard/Schedule";
+import Show from "./pages/Show";
+import Showf from "./pages/Showf"
+import Showres from "./pages/Showres";
 
 //import {TweenMax, Power3 } from 'gsap'; 
 
@@ -66,6 +72,8 @@ function App() {
             </OpenRoute>
           }
         />
+   
+
 
     <Route
           path="forgot-password"
@@ -101,7 +109,9 @@ function App() {
           }
         />
     <Route path="/contact" element={<Contact />} />
-   
+    <Route path="/show" element={<Show />} />
+    <Route path="/showf" element={<Showf />} />
+    <Route path="/showres" element={<Showres />} />
     
   
       
@@ -149,6 +159,7 @@ function App() {
           <Route path="dashboard/cart" element={<Cart />} />
           <Route path="dashboard/enrolled-courses" element={<EnrolledCourses />} />
           <Route path="dashboard/my-courses" element={<MyCourses />} />
+          <Route path="dashboard/schedule" element={<Schedule />} />
           </>
         )
       }
@@ -189,7 +200,11 @@ function App() {
 
       </Route>
 
+     
+        <Route path="/screen" element={<LobbyScreen />} />
+        <Route path="/room/:roomId" element={<RoomPage />} />
     
+
 
     <Route path="*" element={<Error />} />
 

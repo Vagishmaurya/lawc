@@ -34,4 +34,12 @@ export const sidebarLinks = [
     type: ACCOUNT_TYPE.STUDENT,
     icon: "VscHistory",
   },
+  {
+    id: 6,
+    name: "Schedule Date",
+    path: "/dashboard/schedule",
+    type: ACCOUNT_TYPE.STUDENT,
+    icon: "VscHistory",
+  },
+
 ];

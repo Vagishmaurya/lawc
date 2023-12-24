@@ -47,7 +47,7 @@ export default function CourseReviewModal({ setReviewModal }) {
       <div className="my-10 w-11/12 max-w-[700px] rounded-lg border border-richblack-400 bg-richblack-800">
         {/* Modal Header */}
         <div className="flex items-center justify-between rounded-t-lg bg-richblack-700 p-5">
-          <p className="text-xl font-semibold text-richblack-5">Add Review</p>
+          <p className="text-xl font-semibold text-richblack-5">Ask Question</p>
           <button onClick={() => setReviewModal(false)}>
             <RxCross2 className="text-2xl text-richblack-5" />
           </button>
@@ -71,22 +71,22 @@ export default function CourseReviewModal({ setReviewModal }) {
             onSubmit={handleSubmit(onSubmit)}
             className="mt-6 flex flex-col items-center"
           >
-            <ReactStars
+            {/* <ReactStars
               count={5}
               onChange={ratingChanged}
               size={24}
               activeColor="#ffd700"
-            />
+            /> */}
             <div className="flex w-11/12 flex-col space-y-2">
               <label
                 className="text-sm text-richblack-5"
                 htmlFor="courseExperience"
               >
-                Add Your Experience <sup className="text-pink-200">*</sup>
+                Ask Your question <sup className="text-pink-200">*</sup>
               </label>
               <textarea
                 id="courseExperience"
-                placeholder="Add Your Experience"
+                placeholder="Ask from other members"
                 {...register("courseExperience", { required: true })}
                 className="form-style resize-x-none min-h-[130px] w-full"
               />

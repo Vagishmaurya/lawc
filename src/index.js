@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import {configureStore} from "@reduxjs/toolkit";
 import rootReducer from "./reducer";
 // import { Toaster } from "react-hot-toast";
+import { SocketProvider } from "./video/context/SocketProvider";
 
 const store = configureStore({
   reducer : rootReducer,
@@ -17,8 +18,10 @@ root.render(
   <React.StrictMode>
   <Provider store={store}>
     <BrowserRouter>
+    <SocketProvider>
       <App />
       {/* <Toaster /> */}
+      </SocketProvider>
     </BrowserRouter>
   </Provider>
   </React.StrictMode>

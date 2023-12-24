@@ -4,6 +4,7 @@ import CourseReviewModal from '../components/core/ViewCourse/CourseReviewModal'
 import { useState } from 'react'
 import IconBtn from '../components/Common/IconBtn'
 import Query from '../components/core/Course/Query'
+import { Link } from 'react-router-dom'
 function PrivateRoom() {
 const { user } = useSelector((state) => state.profile)
 const [reviewModal, setReviewModal] = useState(false)
@@ -35,13 +36,13 @@ const [reviewModal, setReviewModal] = useState(false)
               onclick={() => setReviewModal(true)}
             />
           </div>
-          <div>
+          {/* <div>
             <IconBtn
               text="Upload Documents"
               customClasses="ml-auto"
               onclick={() => setReviewModal(true)}
             />
-          </div>
+          </div> */}
           </div>
          
 
@@ -74,12 +75,16 @@ const [reviewModal, setReviewModal] = useState(false)
                   </h2>
                   <p className='text-start ml-2 mt-1'>Presenting our cutting-edge video conferencing application tailored for the legal and judiciary community. Facilitating secure and confidential virtual meetings, our platform is designed to streamline remote collaboration among legal professionals. Conduct face-to-face discussions, share legal insights with the highest level of security.</p>
                   <div className=' mt-6 mb-6 flex gap-4 items-center justify-center' >
+                    <Link to={"/screen"}>
                     <button className='bg-champ-100 px-5 font-bold text-velvet-100'>
                      LawVista
                   </button>
+                  </Link>
+                  <Link to="https://meet.google.com/whq-mbcy-crz">
                    <button className='bg-champ-100 px-5 font-bold text-velvet-100'>
                     Google Meet
                   </button>
+                  </Link>
                   </div>
             
             
